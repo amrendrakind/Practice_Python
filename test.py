@@ -1,1 +1,3 @@
-#This is first program in Python
+# This program prints Hello, world!
+
+print('Hello, world!')
