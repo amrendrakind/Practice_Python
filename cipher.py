@@ -1,5 +1,5 @@
 alpha = 'abcdefghijklpmnopqrstuvwxyz'
-s='amrendra'
+s='indianinstituteoftechnology'
 length = len(s)
 i = 0
 k = 3
