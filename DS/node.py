@@ -35,7 +35,20 @@ class LinkedList:
         string_list += str(current_node.get_value()) + "\n"
       current_node = current_node.get_next_node()
     return string_list
-    
+    # Define your remove_node method below:
+  
+  def remove_node(self, value_to_remove):
+    current_node = self.get_head_node()
+    if current_node.get_value() == value_to_remove:
+       self.head_node = current_node.get_next_node()
+    else:
+      while current_node:
+        next_node = current_node.get_next_node()
+        if next_node.get_value() == value_to_remove:
+          current_node.set_next_node(next_node.get_next_node())
+          current_node = None
+        else:
+          current_node = next_node
 
 # Test your code by uncommenting the statements below - did your list print to the terminal?
 ll = LinkedList(5)
