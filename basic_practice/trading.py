@@ -1,4 +1,4 @@
-employee_id = -1
+employee_id = 0
 while(employee_id != "-1"):
     employee_id = str(input("Enter Employee ID "))
     if (employee_id != "-1"):
