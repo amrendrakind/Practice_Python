@@ -32,7 +32,7 @@ class LinkedList:
     current_node = self.get_head_node()
     while current_node:
       if current_node.get_value() != None:
-        string_list += str(current_node.get_value()) + "\n"
+        string_list += str(current_node.get_value()) + " "
       current_node = current_node.get_next_node()
     return string_list
     # Define your remove_node method below:
@@ -55,4 +55,6 @@ ll = LinkedList(5)
 ll.insert_beginning(70)
 ll.insert_beginning(5675)
 ll.insert_beginning(90)
+print(ll.stringify_list())
+ll.remove_node(70)
 print(ll.stringify_list())
