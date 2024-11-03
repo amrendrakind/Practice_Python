@@ -50,6 +50,8 @@ class Queue:
             else:
                 self.head = self.head.get_next_node()
             self.size -= 1
+        else:
+            print("This queue is totally empty!")
         return item_to_remove.get_value()
         
 q = Queue()
