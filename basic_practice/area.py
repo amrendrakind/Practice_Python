@@ -1,4 +1,5 @@
-PI = 22/7
+import math
+PI = math.pi
 def area_circle(r):
     return (PI * r * r)
 
