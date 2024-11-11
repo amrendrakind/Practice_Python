@@ -34,7 +34,13 @@ def isTriangle(d1,d2,d3):
     else:
         return "Not a triangle"
 
+def slope(xi,yi,xj,yj):
+    if( xi == xj):
+        return (math.inf)
+    else:
+        return ((yj - yi) / (xj - xi))
 
+print("Using Distance Formula")
 d1 = distance(x1,y1,x2,y2)
 print(f"Distance between points({x1}, {y1} and {x2}, {y2}) is {d1}")
 
@@ -44,3 +50,12 @@ print(f"Distance between points({x2}, {y2} and {x3}, {y3}) is {d2}")
 d3 = distance(x3,y3,x1,y1)
 print(f"Distance between points({x3}, {y3} and {x1}, {y1}) is {d3}")
 print(isTriangle(d1,d2,d3))
+print("Using Slope of lines")
+s1 = slope(x1,y1,x2,y2)
+print(f"Slope of connecting points ({x1}, {y1} and {x2}, {y2}) is {s1}")
+s2 = slope(x2,y2,x3,y3)
+print(f"Slope of connecting points ({x2}, {y2} and {x3}, {y3}) is {s2}")
+if (s1 != s2):
+    print("Triangle")
+else:
+    print("Not a triangle")
