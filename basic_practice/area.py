@@ -41,14 +41,14 @@ while(polygon != 'exit'):
         rp = ''
         while(rp == ''):
             print("\nRECTANGLE PROPERTIES\n1.Area\n2.Perimeter")
-            rp = str(input("choose the rectangle property or go back" ))
+            rp = str(input("choose the rectangle property or go back " ))
             if rp == 'area' or rp == 'Area' or rp == '1':
                 area = area_rectangle(l,b)
-                print(f"Area of rectangle with side {l},{b} is {area}")
+                print(f"Area of rectangle with lengh {l}, breadth {b} is {area}")
                 rp =''
             elif rp == 'perimeter' or rp == 'Perimeter' or rp == '2':
                 perimeter = perimeter_rectangle(l,b)
-                print(f"Perimeter of rectangle with side {l},{b} is {perimeter}")
+                print(f"Perimeter of rectangle with lengh {l}, breadth {b} is {perimeter}")
                 rp =''
             elif rp == 'back':
                 break
@@ -58,4 +58,4 @@ while(polygon != 'exit'):
     elif polygon == 'exit':
         break
     else:
-        print("Please select correct polygon type or 'exit'")
+        print("Please select correct polygon type or 'exit' ")
