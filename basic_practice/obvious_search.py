@@ -35,6 +35,6 @@ def binary_search(L,k):
         return 0
 
 L = list(range(100000000))
-k = 99999999999
+k = -1
 print(obvious_search(L,k))
 print(binary_search(L,k))
